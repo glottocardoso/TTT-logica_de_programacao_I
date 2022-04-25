@@ -18,13 +18,16 @@ public class Exc15 {
             System.out.println("Digite o nome do produto "+i+ ": ");
             nomeProdutos[i] = sc.nextLine();
             sc.nextLine();
+
             System.out.println("Digite número total de mercadorias em estoque do produto "+i+ ": ");
             qtdEstoque[i] = sc.nextInt();
             qtdEstoqueTotal += qtdEstoque[i];
+
             System.out.println("Digite o valor unitário do produto "+i+ ": ");
             valorUnitario[i] = sc.nextDouble();
             valorTotalEstoque += qtdEstoque[i]*valorUnitario[i];
         }
+
         double valorMedio = valorTotalEstoque/qtdEstoqueTotal;
 
         System.out.println("Quantidade total de mercadorias no estoque: "+qtdEstoqueTotal);
